@@ -1,0 +1,67 @@
+body {
+    background-image: url("../images/american-dad.jpg");
+    background-repeat: no-repeat;
+    background-color: royalblue;
+    background-position: right; 
+}
+
+.navbar {
+    border-bottom: solid 3px black;
+    text-align: center;
+    background: white;
+}
+
+article {
+    font-size:14px;
+    margin-left:20px;
+    border:solid 3px black;
+    padding:5px;
+    color:white;
+    background: blue;
+}
+
+.btn {
+    margin-left:5px;
+    margin-bottom:5px;
+    border:solid 2px black;
+}
+
+.btn:hover {
+    background: blue;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.panel {
+    margin-left:20px;
+}
+
+footer {
+    height: 40px;
+    padding: 10px;
+    background: red;
+    border-top: solid 3px black;
+    text-align: center;
+}
+
+#wins {
+    margin-left:10px;
+    background: white;
+    width:100px;
+    height:40px;
+    padding:2px;
+    border:solid 2px black;
+}
+
+#losses {
+    margin-left:10px;
+    background: white;
+    width:120px;
+    height:40px;
+    padding:2px;
+    border:solid 2px black;
+}
+

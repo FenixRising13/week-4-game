@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game</title>
+    <!-- Reset CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- jQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!-- My Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <container>
+        <div class="row navbar">
+            <h1>The Hardest Button To Button</h1>
+        </div>
+
+        <div class="row">
+            <article class="col-xs-10 col-sm-7 col-md-8 col-lg-8 col-xl-12">
+                <p>Your job is to help the soldiers find the buttons they need for their uniforms. I mean, how can they defend
+                    your freedom if they can't button their shirt...or pants. Am I right?</p>
+                <p>Your mission is to gather the buttons to match the number they are requesting.</p>
+                <p>Make sure you have the right amount. Too few and we'll lose the battle. Too many and we'll be over budget...again.</p>
+
+            </article>
+        </div>
+        <br>
+        <div class="row  col-xs-10 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <button id="btn1" class="btn">
+                <img src="assets/images/green_button.jpg">
+            </button>
+            <button id="btn2" class="btn">
+                <img src="assets/images/brown_button.jpg">
+            </button>
+            <button id="btn3" class="btn">
+                <img src="assets/images/black_button.jpg">
+            </button>
+            <button id="btn4" class="btn">
+                <img src="assets/images/red_button.jpg">
+            </button>
+        </div>
+        <div class="row">
+            <div class="panel panel-default col-xs-4 col-sm-3 col-md-3 col-lg-3 col-xl-2">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Buttons Needed</h3>
+                </div>
+                <!-- Buttons Needed Panel -->
+                <div id="btnNeed" class="panel-body">
+
+                </div>
+            </div>
+
+            <div class="panel panel-default col-xs-4 col-sm-3 col-md-3 col-lg-3 col-xl-2">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Buttons Procured</h3>
+                </div>
+                <!-- Buttons Procured Panel -->
+                <div id="btnProcured" class="panel-body">
+
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3 id="wins">Wins:</h3>
+        </div>
+        <div>
+            <h3 id="losses">Losses:</h3>
+        </div>
+    </container>
+
+    <script src="assets/javascript/game.js">
+
+    </script>
+
+    <footer class="footer navbar-fixed-bottom">
+        Copyright 2017 Mark Powalisz
+    </footer>
+
+</body>
+
+</html>

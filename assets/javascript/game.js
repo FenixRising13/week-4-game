@@ -80,7 +80,7 @@ $(document).ready(function () {
 
     // Reset Function (called by Score Function)
     function reset() {
-        btnNeed = Math.floor(Math.random() * 100) + 1;
+        btnNeed = Math.floor(Math.random() * 120) + 19;
         $("#btnNeed").html(btnNeed);
         btnProcured = 0;
         $("#btnProcured").html(btnProcured);

@@ -6,7 +6,7 @@ var losses = 0;
 
 $(document).ready(function() {
   // Assigns btnNeed a value between 19-100
-  var btnNeed = Math.floor(Math.random() * 120) + 19;
+  btnNeed = Math.floor(Math.random() * 120) + 19;
   // Assigns each button a value from the array "value"
   // ----------------Does not appear to be working properly-----------------
   btn1 = value[Math.floor(Math.random() * 10) + 1];

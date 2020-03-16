@@ -1,67 +1,65 @@
+/* sticky-footer */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
-    background-image: url("../images/american-dad.jpg");
-    background-repeat: no-repeat;
-    background-color: royalblue;
-    background-position: right; 
+  background-color: royalblue;
+  /* sticky-footer */
+  margin: 0 0 30px 0;
 }
 
 .navbar {
-    border-bottom: solid 3px black;
-    text-align: center;
-    background: white;
+  border-bottom: solid 3px black;
+  background: white;
+}
+
+.container {
+  height: 100%;
+  width: auto;
 }
 
 article {
-    font-size:14px;
-    margin-left:20px;
-    border:solid 3px black;
-    padding:5px;
-    color:white;
-    background: blue;
+  font-size: 14px;
+  border: solid 3px black;
+  color: white;
+  background: blue;
 }
 
-.btn {
-    margin-left:5px;
-    margin-bottom:5px;
-    border:solid 2px black;
+#btnNeed {
+  font-size: 16px;
+}
+
+#btnProcured {
+  font-size: 16px;
 }
 
 .btn:hover {
-    background: blue;
+  background: blue;
 }
 
 img {
-    width: 100px;
-    height: 100px;
-}
-
-.panel {
-    margin-left:20px;
-}
-
-footer {
-    height: 40px;
-    padding: 10px;
-    background: red;
-    border-top: solid 3px black;
-    text-align: center;
+  width: 100px;
+  height: 100px;
 }
 
 #wins {
-    margin-left:10px;
-    background: white;
-    width:100px;
-    height:40px;
-    padding:2px;
-    border:solid 2px black;
+  background: white;
+  border: solid 2px black;
 }
 
 #losses {
-    margin-left:10px;
-    background: white;
-    width:120px;
-    height:40px;
-    padding:2px;
-    border:solid 2px black;
+  background: white;
+  border: solid 2px black;
 }
 
+.footer {
+  /* sticky-footer */
+  position: absolute;
+  bottom: 0;
+  height: 30px;
+  width: 100%;
+  background: red;
+  border-top: solid 3px black;
+}

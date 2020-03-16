@@ -24,7 +24,7 @@ $(document).ready(function() {
     btnNeed = btnNeed - btn1;
     btnProcured = btnProcured + btn1;
     $("#btnNeed").html(btnNeed);
-    $("#btnProcured").html(btnProcured);
+    $("#btnProcured").text(btnProcured);
     score();
   });
 
@@ -33,7 +33,7 @@ $(document).ready(function() {
     btnNeed = btnNeed - btn2;
     btnProcured = btnProcured + btn2;
     $("#btnNeed").html(btnNeed);
-    $("#btnProcured").html(btnProcured);
+    $("#btnProcured").text(btnProcured);
     score();
   });
 
@@ -42,7 +42,7 @@ $(document).ready(function() {
     btnNeed = btnNeed - btn3;
     btnProcured = btnProcured + btn3;
     $("#btnNeed").html(btnNeed);
-    $("#btnProcured").html(btnProcured);
+    $("#btnProcured").text(btnProcured);
     score();
   });
   // Button 4 function to update Buttons and call score function
@@ -50,7 +50,7 @@ $(document).ready(function() {
     btnNeed = btnNeed - btn4;
     btnProcured = btnProcured + btn4;
     $("#btnNeed").html(btnNeed);
-    $("#btnProcured").html(btnProcured);
+    $("#btnProcured").text(btnProcured);
     score();
   });
 
@@ -60,14 +60,14 @@ $(document).ready(function() {
     if (btnNeed < 0) {
       alert("You're over budget");
       losses++;
-      $("#losses").html("Losses: " + losses);
+      $("#losses").text("Losses: " + losses);
       reset();
     }
     // Sets Condition for btnNeed < 0
     else if (btnNeed === 0) {
       alert("You've won the war... this time");
       wins++;
-      $("#wins").html("Wins: " + wins);
+      $("#wins").text("Wins: " + wins);
       reset();
     }
   }
@@ -76,9 +76,9 @@ $(document).ready(function() {
   // Reset Function (called by Score Function)
   function reset() {
     btnNeed = Math.floor(Math.random() * 120) + 19;
-    $("#btnNeed").html(btnNeed);
+    $("#btnNeed").text(btnNeed);
     btnProcured = 0;
-    $("#btnProcured").html(btnProcured);
+    $("#btnProcured").text(btnProcured);
     btn1 = value[Math.floor(Math.random() * 10) + 1];
     btn2 = value[Math.floor(Math.random() * 10) + 1];
     btn3 = value[Math.floor(Math.random() * 10) + 1];
